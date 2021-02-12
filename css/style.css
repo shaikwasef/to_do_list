@@ -1,0 +1,33 @@
+body{
+	background: #FE7739;
+	display : flex;
+	flex-direction : column;
+	row-gap: 50px;
+}
+h1{
+	margin : auto;
+	font: normal normal 400 16px fantasy;
+	font-size : 40px;
+}
+.fields{
+	height : 20px;
+	width : 600px;
+	display: flex;
+	margin: auto;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.field_props{
+	font: normal normal 400 16px cursive;
+	border : 2px solid black;
+	height : 50px;
+}
+#task_field{
+	width : 300px;
+}
+#drop_down_field{
+	width : 150px;
+}
+#submit_button{
+	width : 100px;
+}
