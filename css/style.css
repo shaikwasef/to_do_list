@@ -44,9 +44,16 @@ h1{
 	border : 2px solid black;
 	display : flex;
 	flex-direction : column;
+	overflow-y : auto;
+	overflow-x : hidden;
 }
-.list_element{
+.list_element_incomplete{
 	height:50px;
 	width : inherit;
-	border : 2px solid black;
+	color : blue;
+	line-height: 50px;
+	font-size : 50px;
+	border : 2px solid blue;
+	flex : 0 0 auto;
+
 }
