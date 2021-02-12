@@ -25,9 +25,28 @@ h1{
 #task_field{
 	width : 300px;
 }
-#drop_down_field{
+#categories{
 	width : 150px;
 }
-#submit_button{
+#add_button{
 	width : 100px;
+	border-radius: 8px;
+	cursor :  pointer;
+	transition-duration: 0.5s ;
+}
+#add_button:hover {
+	background-color: red;
+}
+.list{
+	margin : auto;
+	height : 300px;
+	width : 500px;
+	border : 2px solid black;
+	display : flex;
+	flex-direction : column;
+}
+.list_element{
+	height:50px;
+	width : inherit;
+	border : 2px solid black;
 }
