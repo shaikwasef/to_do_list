@@ -104,7 +104,7 @@ h1{
 	height: 50px;
 	width : 100px;
 	border-radius : 10px;
-	font: normal normal 200 1vw fantasy;
+	font: normal normal 200 fantasy;
 	cursor : pointer;
 }
 .sorting_field_props:hover{
