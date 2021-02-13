@@ -63,6 +63,7 @@ function complete_list(){
 	root.style.setProperty('--pending_state','none');
 	root.style.setProperty('--completed_state','block');
 }
+
 function pending_list(){
 	root.style.setProperty('--upcoming_state','none');
 	root.style.setProperty('--pending_state','block');
