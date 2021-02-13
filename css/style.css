@@ -24,7 +24,7 @@ h1{
 	justify-content: space-evenly;
 }
 .field_props{
-	font: normal normal 400 16px cursive;
+	font: normal normal 400 5vw cursive;
 	border : 2px solid black;
 	height : 50px;
 }
@@ -57,7 +57,7 @@ h1{
 	height:50px;
 	width : inherit;
 	line-height: 50px;
-	font-size : 5vw;
+	font-size : 30px;
 	border-radius : 20px;
 	flex : 0 0 auto;
 }
@@ -70,7 +70,6 @@ h1{
 	color : red;
 	border-bottom : 2px solid red;
 	display : var(--completed_state);
-
 }
 .list_element_pending{
 	color : green;
