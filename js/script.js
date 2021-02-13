@@ -60,13 +60,13 @@ function upcoming_list(){
 }
 function complete_list(){
 	root.style.setProperty('--upcoming_state','none');
-	root.style.setProperty('--pending_state','block');
-	root.style.setProperty('--completed_state','none');
+	root.style.setProperty('--pending_state','none');
+	root.style.setProperty('--completed_state','block');
 }
 function pending_list(){
 	root.style.setProperty('--upcoming_state','none');
-	root.style.setProperty('--pending_state','none');
-	root.style.setProperty('--completed_state','block');
+	root.style.setProperty('--pending_state','block');
+	root.style.setProperty('--completed_state','none');
 }
 function all_list(){
 	root.style.setProperty('--upcoming_state','block');
