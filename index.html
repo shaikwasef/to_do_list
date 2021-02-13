@@ -5,14 +5,21 @@
 <body>
 	<h1>To-do List</h1>
 	<div class="fields">
-		<div><input class="field_props" type="text" placeholder="TASK TO DO" id="task_field"></div>
+		<div><input class="field_props" type="text" placeholder="CREATE NEW TASK" id="task_field"></div>
 		<select class="field_props" id="categories">
-    		<option>Incomplete</option>
+			<option>STATUS</option>
+    		<option>Upcoming</option>
     		<option>Completed</option>
     		<option>Pending</option>
   		</select>
 		<button class="field_props" id="add_button">ADD</button>
 	</div>
 	<div class="list"></div>
-	<script src = "js/script.js"></script>
+	<div class="sorting_fields">
+		<button class="sorting_field_props" id="all_button">ALL</button>
+		<button class="sorting_field_props" id="upcoming_button">UPCOMING</button>
+		<button class="sorting_field_props" id="complete_button">COMPLETED</button>
+		<button class="sorting_field_props" id="pending_button">PENDING</button>
+	</div>
+	<div class="list"></div>	<script src = "js/script.js"></script>
 </body>

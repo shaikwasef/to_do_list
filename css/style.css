@@ -1,3 +1,9 @@
+:root{
+	--upcoming_state : block;
+	--pending_state : block;
+	--completed_state : block;
+}
+
 body{
 	background: #FE7739;
 	display : flex;
@@ -35,25 +41,84 @@ h1{
 	transition-duration: 0.5s ;
 }
 #add_button:hover {
-	background-color: red;
+	background-color: pink;
+	transform : scale(1.2);
 }
 .list{
 	margin : auto;
 	height : 300px;
 	width : 500px;
-	border : 2px solid black;
 	display : flex;
 	flex-direction : column;
 	overflow-y : auto;
 	overflow-x : hidden;
 }
-.list_element_incomplete{
+.list_element{
 	height:50px;
 	width : inherit;
-	color : blue;
 	line-height: 50px;
-	font-size : 50px;
-	border : 2px solid blue;
+	font-size : 30px;
+	border-radius : 20px;
 	flex : 0 0 auto;
+}
+.list_element_upcoming{
+	color : blue;
+	border-bottom : 2px solid blue;
+	display : var(--upcoming_state);
+}
+.list_element_complete{
+	color : red;
+	border-bottom : 2px solid red;
+	display : var(--completed_state);
+}
+.list_element_pending{
+	color : green;
+	border-bottom : 2px solid green;
+	display : var(--pending_state);
+}
 
+::-webkit-scrollbar{
+	width : 10px;
+}
+::-webkit-scrollbar-track{
+	box-shadow : inset 0 0 5px black;
+	border-radius : 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: grey; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #000000; 
+}
+
+.sorting_fields{
+	height : 20px;
+	width : 600px;
+	display: flex;
+	margin: auto;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.sorting_field_props{
+	height: 50px;
+	width : 100px;
+	border-radius : 10px;
+	font: normal normal 200 16px fantasy;
+	cursor : pointer;
+}
+.sorting_field_props:hover{
+	transform : scale(1.2);
+}
+#all_button:hover{
+	background-color : #F9F900;
+}
+#upcoming_button:hover{
+	background-color : blue;
+}
+#complete_button:hover{
+	background-color : red ;
+}
+#pending_button:hover{
+	background-color : green;
 }
