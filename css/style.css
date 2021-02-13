@@ -24,7 +24,7 @@ h1{
 	justify-content: space-evenly;
 }
 .field_props{
-	font: normal normal 400 5vw cursive;
+	font: normal normal 400 16px cursive;
 	border : 2px solid black;
 	height : 50px;
 }
@@ -104,7 +104,7 @@ h1{
 	height: 50px;
 	width : 100px;
 	border-radius : 10px;
-	font: normal normal 200 16px fantasy;
+	font: normal normal 200 1vw fantasy;
 	cursor : pointer;
 }
 .sorting_field_props:hover{
